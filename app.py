@@ -6,7 +6,7 @@ import re
 
 # Configure page
 st.set_page_config(
-    page_title="Haizi's Poetry Collection",
+    page_title="海子的黎明",
     page_icon="🌙",
     layout="wide"
 )
@@ -189,7 +189,7 @@ def make_vocab_clickable(text, vocab_dict):
     return text
 
 def main():
-    st.title("🌙 Haizi's Poetry Collection")
+    st.title("🌙 海子的黎明")
     st.markdown("*黎明 (Dawn) - A Multilingual Journey*")
     
     # Load data
@@ -289,16 +289,6 @@ def main():
                             </div>
                             """, unsafe_allow_html=True)
     
-    # Display vocabulary information
-    st.sidebar.header("Vocabulary")
-    st.sidebar.markdown("Click on highlighted words in the Chinese text to see their meanings.")
-    
-    # Show vocabulary stats
-    if selected_lang in data and data[selected_lang]['vocab_by_poem']:
-        # Count vocabulary for current poem
-        if selected_poem_idx < len(data[selected_lang]['vocab_by_poem']):
-            vocab_count = len(data[selected_lang]['vocab_by_poem'][selected_poem_idx])
-            st.sidebar.metric("Vocabulary Words", vocab_count)
     
     # Footer
     st.markdown("---")
