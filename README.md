@@ -1,14 +1,16 @@
-# Multilingual Poetry Viewer
+# HaiZi's "Dawn" - Multilingual Poetry Collection
 
-An interactive web application for exploring Haizi's poetry collection in multiple languages with clickable vocabulary annotations.
+**Language / 语言**: [English](README.md) | [中文](README_zh.md)
+
+A web application for reading HaiZi's (海子) poetry with translations in 13 languages. Includes interactive vocabulary annotations for Chinese characters.
 
 ## Features
 
-- **Multilingual Support**: View poems in 13 different languages alongside the original Chinese
-- **Interactive Vocabulary**: Click on Chinese characters to see pinyin, definitions, and usage descriptions
-- **Poem Navigation**: Jump between different poem sections easily
-- **Side-by-Side Display**: Compare original Chinese with any translation
-- **Responsive Design**: Clean, modern interface optimized for reading
+- View poems in 13 languages alongside the original Chinese
+- Click on Chinese characters to see pinyin and definitions
+- Navigate between different poem sections
+- Compare original Chinese with translations
+- Responsive web interface
 
 ## Languages Supported
 
@@ -29,24 +31,7 @@ An interactive web application for exploring Haizi's poetry collection in multip
 
 ## Local Development
 
-### Quick Start (Recommended)
-
-**For macOS/Linux:**
-```bash
-./start.sh run
-```
-
-**For Windows:**
-```cmd
-start.bat run
-```
-
-This will automatically:
-- Create a virtual environment
-- Install all dependencies
-- Start the application
-
-### Manual Setup
+### Setup
 
 1. **Create Virtual Environment**
    ```bash
@@ -87,11 +72,11 @@ This will automatically:
 ## File Structure
 
 ```
-kouyu_baogao_one/
+haizi_liming/
 ├── app.py                    # Main Streamlit application
 ├── requirements.txt          # Python dependencies
 ├── README.md                # This file
-├── haizi_liming_zh.txt      # Original Chinese poems
+├── haizi_liming_zh.txt      # Original Chinese poems by HaiZi
 └── translations/            # Translation files
     ├── english/
     │   ├── en_poem.txt
@@ -104,22 +89,27 @@ kouyu_baogao_one/
 
 ## Usage
 
-1. **Select Language**: Use the sidebar to choose your preferred translation language
-2. **Navigate Poems**: Select different poem sections from the dropdown
-3. **Interactive Vocabulary**: Click on highlighted Chinese characters to see detailed information
-4. **Compare**: View original Chinese and translation side-by-side
+1. Select a translation language from the sidebar
+2. Choose a poem section from the dropdown
+3. Click on Chinese characters to see vocabulary information
+4. View original Chinese and translation side-by-side
 
 ## Technical Details
 
-- Built with Streamlit for rapid web app development
-- Uses pandas for CSV data processing
-- Implements HTML/CSS for interactive vocabulary tooltips
-- Caches data loading for optimal performance
-- Responsive design with sidebar navigation
+- Built with Streamlit
+- Uses pandas for data processing
+- HTML/CSS for vocabulary tooltips
+- Data caching for performance
 
-## About Haizi
+## About HaiZi (海子)
 
-Haizi (海子, 1964-1989) was a Chinese poet known for his lyrical and mystical poetry. This collection features his "Dawn" poems, exploring themes of hope, despair, and the human condition.
+HaiZi (1964-1989), born Zha Haisheng, was one of the most influential Chinese poets of the late 20th century. Known for his deeply spiritual and often melancholic verse, HaiZi's poetry explores themes of nature, death, rebirth, and the eternal struggle between hope and despair.
+
+His themes of Dawn (黎明) is an important theme across his poems. In the book that I have, I found 6 poems that were named with the word 黎明. These poems weave together imagery of water, autumn, and the liminal space between night and day to create a haunting meditation on mortality and transcendence. HaiZi's tragic death at the age of 25 only added to the mystique surrounding his work, making him a legendary figure in modern Chinese literature.
+
+This collection presents HaiZi's poems in their original Chinese with translations in 13 languages and vocabulary annotations.
+
+This was made for 孟老师的 class, 北京大学汉语学13班. 
 
 ---
 
