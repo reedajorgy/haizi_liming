@@ -190,7 +190,7 @@ def make_vocab_clickable(text, vocab_dict):
 
 def main():
     st.title("🌙 海子的黎明")
-    st.markdown("*黎明 (Dawn) - A Multilingual Journey*")
+    st.markdown("*黎明 (Dawn)*")
     
     # Load data
     data = load_poetry_data()
@@ -212,7 +212,7 @@ def main():
         default_idx = available_langs.index('english')
     
     selected_lang_idx = st.sidebar.selectbox(
-        "Select Translation Language",
+        "Select (terrible) Translation Language",
         range(len(lang_options)),
         index=default_idx,
         format_func=lambda x: lang_options[x]
